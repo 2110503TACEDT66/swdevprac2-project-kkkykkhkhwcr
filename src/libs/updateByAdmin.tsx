@@ -1,7 +1,7 @@
 export default async function updateByAdmin (token:string , bookId : string , 
     {date , dentistName} : {date:Date , dentistName : string}
     ) {
-    const response = await fetch(`http://localhost:3000/booked/${bookId}` , {
+    const response = await fetch(`https://presentation-day-1-kkkykkhkhwcr.vercel.app/booked/${bookId}` , {
         method : "PUT",
         headers : {
             "authorization" : `Bearer ${token}`,

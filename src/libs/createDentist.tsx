@@ -3,7 +3,7 @@ export default async function createDentist (token : string , {dentistName , exp
     experience : string,
     expertise : string[]
     }) {
-        const response = await fetch("http://localhost:3000/dentists/" ,{
+        const response = await fetch("https://presentation-day-1-kkkykkhkhwcr.vercel.app/dentists/" ,{
             method : "POST" ,
             body : JSON.stringify({
                 name : dentistName,

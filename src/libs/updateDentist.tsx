@@ -4,7 +4,7 @@ export default async function updateDentist (token : string , dentist_id : strin
     experience : string,
     expertise : string[]
     }) {
-        const response = await fetch(`http://localhost:3000/dentists/${dentist_id}` , {
+        const response = await fetch(`https://presentation-day-1-kkkykkhkhwcr.vercel.app/dentists/${dentist_id}` , {
             method : "PUT",
             headers : {
                 "authorization" : `Bearer ${token}` ,

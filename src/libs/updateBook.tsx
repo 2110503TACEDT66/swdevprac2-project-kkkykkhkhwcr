@@ -1,6 +1,6 @@
 export default async function updateBooking (token : string , 
     {date , dentistName} : {date:Date , dentistName : string}) {
-        const response = await fetch ("http://localhost:3000/booked/" , {
+        const response = await fetch ("https://presentation-day-1-kkkykkhkhwcr.vercel.app/booked/" , {
             method : "PUT",
             headers : {
                 "authorization" : `Bearer ${token}`,

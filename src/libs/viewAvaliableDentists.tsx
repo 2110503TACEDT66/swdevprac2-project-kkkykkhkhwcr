@@ -1,5 +1,5 @@
 export default async function getDentists(token : string) {
-    const response = await fetch ("http://localhost:3000/dentists" , {
+    const response = await fetch ("https://presentation-day-1-kkkykkhkhwcr.vercel.app/dentists" , {
         method : "GET",
         headers : {
             "authorization" : `Bearer ${token}`

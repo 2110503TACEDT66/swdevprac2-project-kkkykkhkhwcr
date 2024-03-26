@@ -1,5 +1,5 @@
 export default async function deleteDentist (token : string , dentistId : string) {
-    const response = await fetch (`http://localhost:3000/dentists/${dentistId}` , {
+    const response = await fetch (`https://presentation-day-1-kkkykkhkhwcr.vercel.app/dentists/${dentistId}` , {
         method : "DELETE",
         headers : {
             "authorization" : `Bearer ${token}`

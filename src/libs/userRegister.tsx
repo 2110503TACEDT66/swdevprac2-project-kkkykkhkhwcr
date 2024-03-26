@@ -1,7 +1,7 @@
 import { FormData } from "@/components/RegisterForm";
 
 export default async function postDataToDatabase(data: FormData) {
-    const response = await fetch("http://localhost:3000/register", {
+    const response = await fetch("https://presentation-day-1-kkkykkhkhwcr.vercel.app/register", {
         method: "POST",
         body: JSON.stringify({
             name: data.name,

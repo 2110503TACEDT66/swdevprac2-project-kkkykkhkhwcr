@@ -1,5 +1,5 @@
 export default async function deleteByAdmin (token:string , bookId : string) {
-    const response = await fetch(`http://localhost:3000/booked/${bookId}` , {
+    const response = await fetch(`https://presentation-day-1-kkkykkhkhwcr.vercel.app/booked/${bookId}` , {
         method : "DELETE",
         headers : {
             "authorization" : `Bearer ${token}`

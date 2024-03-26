@@ -1,5 +1,5 @@
 export default async function viewMyBooking(token:string) {
-    const response = await fetch ("http://localhost:3000/booked" , {
+    const response = await fetch ("https://presentation-day-1-kkkykkhkhwcr.vercel.app/booked" , {
         method : "GET",
         headers : {
             "authorization" : `Bearer ${token}`
